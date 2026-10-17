@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>if(location.protocol==="http:"&&!["localhost","127.0.0.1"].includes(location.hostname))location.replace("https://"+location.host+location.pathname+location.search+location.hash)</script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>(()=>{try{const t=localStorage.getItem("forkit_ai_theme"),m=matchMedia("(prefers-color-scheme: light)").matches;document.documentElement.dataset.theme=t==="light"||t==="dark"?t:(m?"light":"dark")}catch(_){document.documentElement.dataset.theme="dark"}})()</script>
+  <title>AI Action Reconstruction Demo | Agent audit trail &amp; provenance | Forkit AI</title>
+  <meta name="description" content="Run a no-signup, simulated AI agent audit trail. Toggle MCP/API, identity, approval and business evidence and inspect DIRECT, SUPPORTED, INFERRED, CONFLICTING and MISSING claims.">
+  <link rel="canonical" href="https://forkit-ai.com/reconstruct/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Action Reconstruction Demo | Agent audit trail &amp; provenance | Forkit AI">
+  <meta property="og:description" content="Run a no-signup, simulated AI agent audit trail. Toggle MCP/API, identity, approval and business evidence and inspect DIRECT, SUPPORTED, INFERRED, CONFLICTING and MISSING claims.">
+  <meta property="og:url" content="https://forkit-ai.com/reconstruct/">
+  <meta property="og:image" content="https://forkit-ai.com/assets/og-forkit-ai.png">
+  <meta property="og:image:alt" content="Forkit AI logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Action Reconstruction Demo | Agent audit trail &amp; provenance | Forkit AI">
+  <meta name="twitter:description" content="Run a no-signup, simulated AI agent audit trail. Toggle MCP/API, identity, approval and business evidence and inspect DIRECT, SUPPORTED, INFERRED, CONFLICTING and MISSING claims.">
+  <meta name="twitter:image" content="https://forkit-ai.com/assets/og-forkit-ai.png">
+  <link rel="icon" href="/assets/forkit-ai-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/theme.css?v=20261009promo">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"AI Action Reconstruction Demo | Agent audit trail &amp; provenance | Forkit AI","description":"Run a no-signup, simulated AI agent audit trail. Toggle MCP/API, identity, approval and business evidence and inspect DIRECT, SUPPORTED, INFERRED, CONFLICTING and MISSING claims.","url":"https://forkit-ai.com/reconstruct/","isPartOf":{"@type":"WebSite","name":"Forkit AI","url":"https://forkit-ai.com/"}}</script>
+</head>
+<body data-page="reconstruct">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="nav">
+    <a class="brand" href="/" aria-label="Forkit AI home"><img class="brand-logo" src="/assets/forkit-ai-wordmark-on-dark.svg?v=20261009promo" alt="Forkit AI"></a>
+    <nav aria-label="Primary"><a href="/footprint/">Footprint</a><a href="/passport/">Passport</a><a class="active" href="/reconstruct/" aria-current="page">Reconstruct</a><a href="/action-assurance/">Enterprise</a><a href="/partners/">Partners</a><a href="/contact/">Contact</a></nav>
+    <a class="nav-cta active" href="/reconstruct/">Reconstruct</a>
+  </header>
+  <main id="main-content">
+    <section class="hero shell reconstruct-hero">
+      <div class="status-line"><span class="tag prototype-tag">PROTOTYPE</span><span class="tag simulated-tag">SIMULATED EVIDENCE</span></div>
+      <p class="eyebrow">FORKIT RECONSTRUCT</p>
+      <h1>FOLLOW THE<br><em>EVIDENCE CHAIN.</em></h1>
+      <p class="lead">This is an interactive product prototype. Choose a scenario, switch evidence sources on or off, then reconstruct the Action record. It uses simulated evidence only—no customer or production data.</p>
+      <div class="actions"><a class="btn primary" href="#reconstruction">START RECONSTRUCTION</a><a class="btn secondary" href="/how-it-works/">HOW IT WORKS</a><a class="btn secondary" href="/action-passport-demo/" data-analytics="action_passport_cta">EXPLORE ACTION PASSPORT <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section id="reconstruction" class="shell reconstruct-lab" aria-labelledby="reconstruct-title">
+      <div class="section-head">
+        <div><p class="eyebrow">INTERACTIVE RECONSTRUCTION</p><h2 id="reconstruct-title">Inspect each claim and its source.</h2></div>
+        <span class="tag simulated-tag">SIMULATED · ALL SOURCES</span>
+      </div>
+
+      <div class="reconstruct-toolbar">
+        <div class="scenario-switch" role="group" aria-label="Scenario">
+          <button type="button" class="scenario-btn active" data-scenario="developer" aria-pressed="true">Developer action</button>
+          <button type="button" class="scenario-btn" data-scenario="procurement" aria-pressed="false">Procurement action</button>
+        </div>
+        <button type="button" class="btn primary" id="runReconstruct">RUN RECONSTRUCTION</button><button type="button" class="btn secondary" id="shareSimulated">COPY SIMULATED EXAMPLE LINK</button>
+      </div>
+
+      <div class="reconstruct-grid">
+        <section class="evidence-control" aria-labelledby="sources-title">
+          <div class="panel-title"><span id="sources-title">EVIDENCE SOURCES</span><b id="sourceCount">0 / 0 present</b></div>
+          <div id="sourceControls" class="source-controls"></div>
+          <p class="demo-note">Every source is synthetic, including its provenance ID. Switch sources on or off to inspect what can and cannot be supported; no real data is ingested.</p>
+        </section>
+
+        <section class="reconstruct-result" aria-live="polite" aria-labelledby="record-title">
+          <div class="record-headline">
+            <div><span class="mini-label">ACTION RECORD</span><h3 id="record-title">Ready to reconstruct</h3></div>
+            <span class="assurance-badge" id="reconstructAssurance">—</span>
+          </div>
+          <div id="reconstructChain" class="enterprise-chain" aria-label="Reconstructed action chain"></div>
+          <div id="reconstructEvidence" class="record-evidence reconstruct-evidence" aria-label="Claim evidence and original simulated source references"></div>
+          <div class="confidence-meter" aria-label="Simulated source coverage, not confidence"><i id="confidenceFill"></i></div>
+          <div class="reconstruct-summary"><strong id="coverageValue">0%</strong><span id="coverageCopy">Select evidence and run reconstruction.</span></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="shell cta-band">
+      <div><p class="eyebrow">PRODUCT BOUNDARY</p><h2>The interaction is real. The evidence is simulated.</h2></div>
+      <div class="cta-band-actions"><a class="btn primary" href="/contact/" data-analytics="real_action_intent">BRING ONE REAL ACTION</a><a class="btn secondary" href="/action-assurance/">ENTERPRISE MODE</a></div>
+    </section>
+  </main>
+  <footer class="footer shell">
+    <div><a class="brand footer-brand" href="/"><img class="brand-logo" src="/assets/forkit-ai-wordmark-on-dark.svg?v=20261009promo" alt="Forkit AI"></a><p>Interactive reconstruction prototype.</p></div>
+    <div class="footer-links"><a href="/">Home</a><a href="/footprint/">Footprint</a><a href="/passport/">Passport</a><a href="/reconstruct/">Reconstruct</a><a href="/action-assurance/">Enterprise</a><a href="/partners/">Partners</a><a href="/contact/">Contact</a><a href="/how-it-works/">How it works</a></div>
+    <div class="footer-meta"><span>PROTOTYPE · SIMULATED DATA</span><span>Independent Forkit AI site</span></div>
+  <div class="analytics-site-links"><a href="/privacy/">Privacy &amp; analytics</a><button type="button" class="analytics-footer-button" data-cookie-settings>Analytics settings</button></div></footer>
+  <script src="/config.js"></script><script src="/analytics.js"></script><script src="/ga4.js"></script><script src="/evidence-demo.js"></script><script src="/reconstruct.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "benchmark_version": "demo-benchmark/1",
+  "simulated": true,
+  "measured_on": "2026-10-17",
+  "environment": {
+    "python": "3.12.15",
+    "system": "Windows 11",
+    "machine": "AMD64",
+    "note": "One developer laptop; not production throughput."
+  },
+  "command": "uv run python scripts/benchmark.py --sizes 3000 5000 6000 9000 --repeats 3",
+  "repeats": 3,
+  "statistic": "median",
+  "results": [
+    {
+      "events": 3000,
+      "relevant_records": 22,
+      "ingest_ms": 255,
+      "reconstruct_ms": 191,
+      "pack_ms": 2,
+      "identical_across_runs": true,
+      "grades_as_planned": true
+    },
+    {
+      "events": 5000,
+      "relevant_records": 30,
+      "ingest_ms": 428,
+      "reconstruct_ms": 338,
+      "pack_ms": 2,
+      "identical_across_runs": true,
+      "grades_as_planned": true
+    },
+    {
+      "events": 6000,
+      "relevant_records": 35,
+      "ingest_ms": 515,
+      "reconstruct_ms": 390,
+      "pack_ms": 2,
+      "identical_across_runs": true,
+      "grades_as_planned": true
+    },
+    {
+      "events": 9000,
+      "relevant_records": 43,
+      "ingest_ms": 765,
+      "reconstruct_ms": 614,
+      "pack_ms": 3,
+      "identical_across_runs": true,
+      "grades_as_planned": true
+    }
+  ]
+}

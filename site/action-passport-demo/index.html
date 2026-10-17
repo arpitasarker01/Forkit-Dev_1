@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>if(location.protocol==="http:"&&!["localhost","127.0.0.1"].includes(location.hostname))location.replace("https://"+location.host+location.pathname+location.search+location.hash)</script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>(()=>{try{const t=localStorage.getItem("forkit_ai_theme"),m=matchMedia("(prefers-color-scheme: light)").matches;document.documentElement.dataset.theme=t==="light"||t==="dark"?t:(m?"light":"dark")}catch(_){document.documentElement.dataset.theme="dark"}})()</script>
+  <title>AI Action Passport demo | Reconstruct one AI action across systems | Forkit AI</title>
+  <meta name="description" content="Simulated demo: search thousands of synthetic logs from five systems, then inspect one AI action's evidence-graded passport, its conflicts, its missing approval and a verifiable evidence package.">
+  <link rel="canonical" href="https://forkit-ai.com/action-passport-demo/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Every AI action has a story. Forkit gives it a passport. | Forkit AI">
+  <meta property="og:description" content="Simulated demo: thousands of synthetic logs, five systems, one reconstructed AI action with evidence of what happened, what conflicts and what remains unknown.">
+  <meta property="og:url" content="https://forkit-ai.com/action-passport-demo/">
+  <meta property="og:image" content="https://forkit-ai.com/assets/og-forkit-ai.png">
+  <meta property="og:image:alt" content="Forkit AI logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Every AI action has a story. Forkit gives it a passport.">
+  <meta name="twitter:description" content="Simulated demo: thousands of synthetic logs, five systems, one reconstructed AI action with evidence of what happened, what conflicts and what remains unknown.">
+  <meta name="twitter:image" content="https://forkit-ai.com/assets/og-forkit-ai.png">
+  <link rel="icon" href="/assets/forkit-ai-mark.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/theme.css?v=20261009promo">
+  <link rel="stylesheet" href="/action-passport-demo/demo.css?v=20261017">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"AI Action Passport demo | Forkit AI","description":"Simulated demo of an evidence-graded AI Action Passport reconstructed from synthetic logs across five systems.","url":"https://forkit-ai.com/action-passport-demo/","isPartOf":{"@type":"WebSite","name":"Forkit AI","url":"https://forkit-ai.com/"}}</script>
+</head>
+<body data-page="action_passport_demo" class="apd-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="nav">
+    <a class="brand" href="/" aria-label="Forkit AI home"><img class="brand-logo" src="/assets/forkit-ai-wordmark-on-dark.svg?v=20261009promo" alt="Forkit AI"></a>
+    <nav aria-label="Primary"><a href="/footprint/">Footprint</a><a href="/passport/">Passport</a><a href="/reconstruct/">Reconstruct</a><a href="/action-assurance/">Enterprise</a><a href="/partners/">Partners</a><a href="/contact/">Contact</a></nav>
+    <a class="nav-cta" href="#pilot" data-analytics="apd_pilot_cta">Request a pilot</a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero shell apd-hero" aria-labelledby="apd-title">
+      <div class="status-line">
+        <span class="tag simulated-tag">SIMULATED DEMO · FICTIONAL DATA</span>
+        <span class="tag live-tag">SEARCH RUNS IN YOUR BROWSER</span>
+        <span class="tag prototype-tag">RECONSTRUCTION PRECOMPUTED BY THE PRIVATE ENGINE</span>
+      </div>
+      <p class="eyebrow">FORKIT AI · ACTION PASSPORT</p>
+      <h1 id="apd-title">Every AI action has a story. <em>Forkit gives it a passport.</em></h1>
+      <p class="lead">Thousands of logs. Different systems. One reconstructed journey—with evidence of what happened, what conflicts, and what remains unknown.</p>
+      <figure class="apd-question">
+        <blockquote>“Our AI agent issued a €40,000 refund. Who authorized it? Why does our ERP show only €4,000? What actually happened?”</blockquote>
+        <figcaption>A fictional finance team, one simulated business day</figcaption>
+      </figure>
+      <div class="actions">
+        <a class="btn primary" href="#ocean">START THE DEMO <span aria-hidden="true">↓</span></a>
+        <a class="btn secondary" href="#pilot" data-analytics="apd_pilot_cta">REQUEST AN ENTERPRISE PILOT</a>
+      </div>
+    </section>
+
+    <nav class="apd-steps shell" aria-label="Demo steps">
+      <ol>
+        <li><a href="#ocean" data-step="ocean"><b>01</b> Ocean of logs</a></li>
+        <li><a href="#find" data-step="find"><b>02</b> Find the action</a></li>
+        <li><a href="#passport" data-step="passport" aria-disabled="true"><b>03</b> Action Passport</a></li>
+        <li><a href="#revelation" data-step="revelation" aria-disabled="true"><b>04</b> What we found</a></li>
+        <li><a href="#evidence" data-step="evidence" aria-disabled="true"><b>05</b> Evidence package</a></li>
+      </ol>
+    </nav>
+
+    <section id="ocean" class="apd-scene shell" aria-labelledby="ocean-title">
+      <div class="apd-scene-head">
+        <div>
+          <p class="eyebrow">01 · THE OCEAN OF LOGS</p>
+          <h2 id="ocean-title">One business day. <span data-count="systems">5</span> systems. <span data-count="events">—</span> events.</h2>
+          <p class="apd-copy">Every dot is one synthetic event from an AI agent trace, the identity provider, support and approvals, payments or the ERP. Somewhere in here is a €40,000 refund.</p>
+        </div>
+        <fieldset class="apd-size" id="size-picker">
+          <legend>Synthetic dataset</legend>
+          <div class="apd-size-options" id="size-options" role="radiogroup" aria-label="Number of synthetic events"></div>
+          <p class="apd-size-note" id="size-note" aria-live="polite">Each size is a separate engine run on its own generated dataset.</p>
+        </fieldset>
+      </div>
+      <div class="apd-ocean" id="ocean-panel">
+        <canvas id="ocean-canvas" role="img" aria-label="Synthetic log events from five systems across one day"></canvas>
+        <div class="apd-ocean-tip" id="ocean-tip" role="tooltip" hidden></div>
+        <div class="apd-ocean-state" id="ocean-state" aria-live="polite">Loading synthetic events…</div>
+        <ul class="apd-legend" id="ocean-legend" aria-label="Events per system"></ul>
+      </div>
+    </section>
+
+    <section id="find" class="apd-scene shell" aria-labelledby="find-title">
+      <div class="apd-scene-head">
+        <div>
+          <p class="eyebrow">02 · FIND THE ACTION</p>
+          <h2 id="find-title">Ask what happened.</h2>
+          <p class="apd-copy">First, a plain keyword search over every loaded event, in your browser. Then the reconstruction the private Forkit engine computed on the same dataset.</p>
+        </div>
+      </div>
+      <form class="apd-search" id="search-form" role="search">
+        <label for="query" class="sr-only">Question about an action</label>
+        <span class="apd-mode live" aria-hidden="true">LIVE · KEYWORD SEARCH</span>
+        <input id="query" name="query" autocomplete="off" spellcheck="false" value="What happened to refund RFD-042?">
+        <button type="submit" class="btn primary">SEARCH THE LOGS</button>
+      </form>
+      <div class="apd-result" id="search-result" aria-live="polite"></div>
+      <div class="apd-engine" id="engine-step" hidden>
+        <div class="apd-engine-copy">
+          <span class="apd-mode engine">PRECOMPUTED · PRIVATE FORKIT ENGINE</span>
+          <h3>Keyword search stops at the records that mention the ID.</h3>
+          <p id="engine-gap"></p>
+          <p class="apd-fine">The engine ran on this exact dataset before publication. Your browser only displays its result and can verify the published hashes; no reconstruction logic runs here.</p>
+        </div>
+        <button type="button" class="btn primary" id="reveal">REVEAL THE RECONSTRUCTION</button>
+      </div>
+      <div class="apd-result" id="reveal-result" aria-live="polite"></div>
+    </section>
+
+    <section id="passport" class="apd-scene shell" aria-labelledby="passport-title" hidden>
+      <div class="apd-scene-head">
+        <div>
+          <p class="eyebrow">03 · ACTION PASSPORT</p>
+          <h2 id="passport-title">The journey of one AI action.</h2>
+          <p class="apd-copy" id="passport-disclaimer"></p>
+        </div>
+      </div>
+      <div class="apd-passport">
+        <div class="apd-passport-page apd-passport-id">
+          <div class="apd-passport-top">
+            <img src="/assets/forkit-ai-mark-on-dark.svg" alt="" width="34" height="34">
+            <div><p class="apd-passport-kicker">ACTION PASSPORT</p><p class="apd-passport-sub">Evidence record · not an authorization</p></div>
+            <span class="tag simulated-tag">SIMULATED</span>
+          </div>
+          <p class="apd-passport-outcome" id="passport-outcome"></p>
+          <dl class="apd-fields" id="passport-fields"></dl>
+          <h3 class="apd-mini">Visas · permissions and approvals</h3>
+          <ul class="apd-visa" id="passport-visa"></ul>
+          <p class="apd-mrz" id="passport-mrz" aria-hidden="true"></p>
+        </div>
+        <div class="apd-passport-page apd-passport-stamps">
+          <h3 class="apd-mini">Border stamps · where the action appeared</h3>
+          <div class="apd-stamps" id="passport-stamps"></div>
+        </div>
+      </div>
+      <div class="apd-two">
+        <div>
+          <h3 class="apd-subtitle">Journey timeline</h3>
+          <ol class="apd-timeline" id="passport-timeline"></ol>
+        </div>
+        <div>
+          <h3 class="apd-subtitle">Confidence and uncertainty</h3>
+          <ul class="apd-grade-key" id="grade-key"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="revelation" class="apd-scene shell" aria-labelledby="revelation-title" hidden>
+      <div class="apd-scene-head">
+        <div>
+          <p class="eyebrow">04 · WHAT WE FOUND</p>
+          <h2 id="revelation-title">What happened, what conflicts, what is missing.</h2>
+        </div>
+      </div>
+      <p class="apd-summary" id="what-happened"></p>
+      <div class="apd-findings" id="finding-cards"></div>
+      <div class="apd-next">
+        <h3 class="apd-subtitle">What to investigate next</h3>
+        <ol id="next-steps"></ol>
+      </div>
+    </section>
+
+    <section id="evidence" class="apd-scene shell" aria-labelledby="evidence-title" hidden>
+      <div class="apd-scene-head">
+        <div>
+          <p class="eyebrow">05 · EVIDENCE PACKAGE</p>
+          <h2 id="evidence-title">Inspect, verify and export the evidence.</h2>
+          <p class="apd-copy">Every claim points to the records behind it. Technical detail stays one click away.</p>
+        </div>
+      </div>
+      <div class="apd-claims" id="evidence-table"></div>
+      <div class="apd-two apd-evidence-grid">
+        <div class="apd-panel">
+          <h3 class="apd-subtitle">Source coverage</h3>
+          <div class="apd-table-wrap" id="coverage-table"></div>
+        </div>
+        <div class="apd-panel">
+          <h3 class="apd-subtitle">Provenance</h3>
+          <dl class="apd-provenance" id="provenance"></dl>
+        </div>
+      </div>
+      <div class="apd-panel apd-integrity">
+        <div>
+          <h3 class="apd-subtitle">Integrity check</h3>
+          <p class="apd-fine" id="verify-scope"></p>
+          <ul class="apd-verify" id="verify-result" aria-live="polite"></ul>
+        </div>
+        <div class="apd-integrity-actions">
+          <button type="button" class="btn primary" id="verify">VERIFY IN YOUR BROWSER</button>
+          <button type="button" class="btn secondary" id="download">DOWNLOAD EVIDENCE PACKAGE (JSON)</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="apd-scene shell apd-numbers" aria-labelledby="numbers-title">
+      <div class="apd-scene-head"><div><p class="eyebrow">WHAT THE NUMBERS ARE</p><h2 id="numbers-title">Synthetic results, kept apart from real activity.</h2></div></div>
+      <div class="apd-two">
+        <article class="apd-panel">
+          <span class="tag simulated-tag">SYNTHETIC DEMONSTRATION</span>
+          <dl class="apd-metrics" id="synthetic-metrics"></dl>
+          <p class="apd-fine" id="benchmark-note"></p>
+        </article>
+        <article class="apd-panel">
+          <span class="tag planned-tag">REAL WEBSITE ACTIVITY</span>
+          <p class="apd-awaiting"><strong>Not published yet.</strong> Visitors, demo starts, completions, downloads and pilot requests will appear here only from verified, consented analytics, as aggregates large enough to protect individuals, with the reporting period stated.</p>
+          <p class="apd-fine">The synthetic events above are not customers, users or market traction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pilot" class="shell cta-band apd-pilot" aria-labelledby="pilot-title">
+      <div>
+        <p class="eyebrow">ENTERPRISE PILOT</p>
+        <h2 id="pilot-title">Bring one real workflow. See its Action Passport.</h2>
+        <p class="apd-copy">Read-only evidence from your own systems, reconstructed inside your environment. Start with one consequential AI workflow.</p>
+      </div>
+      <div class="cta-band-actions">
+        <a class="btn primary" href="mailto:partnership@forkit.dev?subject=Forkit%20Action%20Passport%20enterprise%20pilot" data-analytics="apd_pilot_cta">REQUEST AN ENTERPRISE PILOT</a>
+        <a class="btn secondary" href="/action-assurance/" data-analytics="enterprise_interest">SEE ACTION ASSURANCE</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <div><a class="brand footer-brand" href="/"><img class="brand-logo" src="/assets/forkit-ai-wordmark-on-dark.svg?v=20261009promo" alt="Forkit AI"></a><p>Evidence for consequential AI actions.</p></div>
+    <div class="footer-links"><a href="/">Home</a><a href="/footprint/">Footprint</a><a href="/passport/">Passport</a><a href="/reconstruct/">Reconstruct</a><a href="/action-assurance/">Enterprise</a><a href="/partners/">Partners</a><a href="/contact/">Contact</a><a href="/how-it-works/">How it works</a></div>
+    <div class="footer-meta"><span>SIMULATED DEMO · fictional data · not legal, audit or compliance advice</span><span id="bundle-meta"></span></div>
+    <div class="analytics-site-links"><a href="/privacy/">Privacy &amp; analytics</a><button type="button" class="analytics-footer-button" data-cookie-settings>Analytics settings</button></div>
+  </footer>
+
+  <script src="/config.js"></script>
+  <script src="/analytics.js"></script><script src="/ga4.js"></script>
+  <script type="module" src="/action-passport-demo/app.js?v=20261017"></script>
+</body>
+</html>

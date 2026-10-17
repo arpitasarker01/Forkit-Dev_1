@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "channel": "private-beta",
+  "status": "not_published",
+  "version": null,
+  "artifacts": {},
+  "message": "No audited native executables published. No installation will run."
+}

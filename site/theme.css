@@ -1,0 +1,188 @@
+/* Forkit AI production dual-theme layer */
+html{color-scheme:dark}html[data-theme="light"]{color-scheme:light}
+body,.nav,.brand-logo,.theme-toggle,.level-card,.fragment-grid article,.use-card,.cta-band,.metric,.install-card,.device-window,.inspector-panel,.enterprise-chain,.assurance-record,.record-head,.record-evidence,.privacy-columns article,.embed-section,.scenario-switch,.evidence-control,.reconstruct-result,.source-toggle,.action-schema pre,.arch-source span,.arch-box{transition:background-color .22s ease,border-color .22s ease,color .22s ease,box-shadow .22s ease}
+.theme-toggle{display:inline-grid;place-items:center;width:38px;height:38px;flex:0 0 38px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035);color:var(--cream);cursor:pointer;font:600 17px/1 system-ui,sans-serif;box-shadow:none}
+.theme-toggle:hover{border-color:var(--cyan);transform:translateY(-1px)}
+.theme-toggle:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.theme-toggle .theme-sun,.theme-toggle .theme-moon{display:none}
+html[data-theme="dark"] .theme-toggle .theme-sun{display:block}
+html[data-theme="light"] .theme-toggle .theme-moon{display:block}
+html[data-theme="dark"] .brand-logo{content:url('/assets/forkit-ai-wordmark-on-dark.svg?v=20261008purple')}
+html[data-theme="light"]{--navy:#f5efe4;--navy2:#fffdf8;--navy3:#ece2d3;--cream:#2a1f55;--ink:#2a1f55;--muted:#4f7e82;--line:#d8ccbb;--cyan:#008190;--orange:#f49355;--peach:#f9c18c;--red:#c9534d;--green:#2d7f7c;--shadow:0 20px 70px rgba(42,31,85,.12)}
+html[data-theme="light"] body{background:radial-gradient(circle at 82% 0%,rgba(0,129,144,.10),transparent 34rem),linear-gradient(180deg,#f8f3ea 0,#f1ebdf 100%);color:var(--ink)}
+html[data-theme="light"] .brand-logo{content:url('/assets/forkit-ai-wordmark-on-light.svg?v=20261008exact')}
+html[data-theme="light"] .nav{border-bottom-color:rgba(42,31,85,.12)}
+html[data-theme="light"] .nav nav a{color:#655b78}
+html[data-theme="light"] .nav nav a:hover,html[data-theme="light"] .nav nav a.active{color:#2a1f55}
+html[data-theme="light"] .theme-toggle{background:rgba(255,255,255,.62);color:#2a1f55}
+html[data-theme="light"] .lead,html[data-theme="light"] .level-card p,html[data-theme="light"] .truth-grid li,html[data-theme="light"] .workflow-grid p,html[data-theme="light"] .fragment-grid p,html[data-theme="light"] .state-grid p,html[data-theme="light"] .section-copy,html[data-theme="light"] .use-card p,html[data-theme="light"] .contact-card p,html[data-theme="light"] .privacy-columns article p,html[data-theme="light"] .privacy-columns li{color:#5f6673}
+html[data-theme="light"] .level-index,html[data-theme="light"] .panel-title,html[data-theme="light"] .sample-note,html[data-theme="light"] .timeline-row em,html[data-theme="light"] .inspector-panel>small,html[data-theme="light"] .inspector-panel dt,html[data-theme="light"] .metric span,html[data-theme="light"] .metric small,html[data-theme="light"] .footer,html[data-theme="light"] .footer-meta,html[data-theme="light"] .embed-head,html[data-theme="light"] .reconstruct-summary span{color:#687078}
+html[data-theme="light"] .metric-word{color:#4f5965}
+html[data-theme="light"] .join-line,html[data-theme="light"] .contact-check p{color:#66727a}
+html[data-theme="light"] .level-card,html[data-theme="light"] .fragment-grid article,html[data-theme="light"] .use-card,html[data-theme="light"] .privacy-columns article,html[data-theme="light"] .evidence-control,html[data-theme="light"] .reconstruct-result,html[data-theme="light"] .record-evidence,html[data-theme="light"] .arch-box,html[data-theme="light"] .arch-source span{background:#fffdf8}
+html[data-theme="light"] .level-card.current{background:linear-gradient(155deg,rgba(0,129,144,.08),#fffdf8)}
+html[data-theme="light"] .use-card{background:linear-gradient(155deg,rgba(0,129,144,.07),#fffdf8)}
+html[data-theme="light"] .enterprise-card{background:linear-gradient(155deg,rgba(244,147,85,.10),#fffdf8)}
+html[data-theme="light"] .action-visual,html[data-theme="light"] .cta-band{background:linear-gradient(135deg,rgba(0,129,144,.08),rgba(244,147,85,.09))}
+html[data-theme="light"] .install-card,html[data-theme="light"] .device-window,html[data-theme="light"] .embed-section,html[data-theme="light"] .scenario-switch,html[data-theme="light"] .action-schema pre{background:#fffdf8}
+html[data-theme="light"] .inspector-panel,html[data-theme="light"] .source-toggle,html[data-theme="light"] .record-head,html[data-theme="light"] .enterprise-chain{background:#f7f1e7}
+html[data-theme="light"] .timeline-row div,html[data-theme="light"] .confidence-meter{background:#e8ded0}
+html[data-theme="light"] .timeline-row label,html[data-theme="light"] .install-row code{color:#2f3240}
+html[data-theme="light"] .window-bar>span{background:#b7aa96}
+html[data-theme="light"] .scenario-btn{color:#657078}
+html[data-theme="light"] .scenario-btn.active{background:#ece2d3;color:#008190}
+html[data-theme="light"] .source-toggle i{background:#d4c9b9}
+html[data-theme="light"] .source-toggle i:after{background:#8d857a}
+html[data-theme="light"] .action-schema code{color:#266d72}
+html[data-theme="light"] .warning{color:#5f6673;background:rgba(244,147,85,.08)}
+html[data-theme="light"] .footer-brand{color:#2a1f55}
+html[data-theme="light"] .skip-link{background:#2a1f55;color:#f1ebdf}
+@media(max-width:980px){.theme-toggle{margin-left:auto}.nav-cta{margin-left:0}}
+@media(max-width:520px){.theme-toggle{width:36px;height:36px;flex-basis:36px;border-radius:9px}.brand-logo{width:132px!important;max-height:40px!important}}
+@media(prefers-reduced-motion:reduce){body,.nav,.brand-logo,.theme-toggle,.level-card,.fragment-grid article,.use-card,.cta-band,.metric,.install-card,.device-window,.inspector-panel,.enterprise-chain,.assurance-record,.record-head,.record-evidence,.privacy-columns article,.embed-section,.scenario-switch,.evidence-control,.reconstruct-result,.source-toggle,.action-schema pre,.arch-source span,.arch-box{transition:none}}
+/* Production polish: complete light-mode coverage */
+html[data-theme="light"] .truth-grid article,
+html[data-theme="light"] .workflow-grid article,
+html[data-theme="light"] .contact-card{background:#fffdf8}
+html[data-theme="light"] .demo-frame{background:#fffdf8}
+html[data-theme="light"] .chain{background:linear-gradient(180deg,#f8f2e9,#eee4d7)}
+html[data-theme="light"] .chain-node,
+html[data-theme="light"] .evidence-panel{background:#f7f1e7}
+html[data-theme="light"] .chain-node small,
+html[data-theme="light"] .demo-note,
+html[data-theme="light"] .record-head p{color:#5f6673}
+html[data-theme="light"] .enterprise-chain span{background:#fffdf8}
+html[data-theme="light"] .simulated-tag{color:#75549b;border-color:rgba(117,84,155,.24);background:rgba(117,84,155,.05)}
+html[data-theme="light"] .evidence-chip.inferred{color:#75549b}
+html[data-theme="light"] .live-tag{border-color:rgba(63,127,127,.25);background:rgba(63,127,127,.06)}
+html[data-theme="light"] .prototype-tag{border-color:rgba(244,147,85,.28);background:rgba(244,147,85,.07)}
+html[data-theme="light"] .assurance-badge{background:rgba(244,147,85,.07)}
+.brand-logo{width:190px;max-height:56px}
+.nav{backdrop-filter:saturate(140%) blur(10px)}
+html[data-theme="dark"] .nav{background:rgba(42,31,85,.18)}
+html[data-theme="light"] .nav{background:rgba(250,246,239,.50)}
+.hero h1 em{color:var(--orange)}
+.nav-cta,.btn.primary{box-shadow:0 7px 22px rgba(0,129,144,.18)}
+@media(max-width:520px){.brand-logo{width:148px!important;max-height:44px!important}}
+
+/* Consent UI is part of the public site, never a third-party overlay. */
+.analytics-consent{position:fixed;bottom:14px;left:14px;right:14px;z-index:1000;margin:auto;max-width:990px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:var(--navy2);color:var(--ink);border:1px solid var(--line);padding:20px 24px;border-radius:14px;box-shadow:0 10px 45px rgba(0,0,0,.3)}
+.analytics-consent-content{max-width:620px}.analytics-consent strong{font-size:16px}.analytics-consent p{font-size:13px;line-height:1.5;color:var(--muted);margin:8px 0 0}.analytics-consent a{text-decoration:underline}.analytics-consent-actions{display:flex;gap:9px;flex-wrap:wrap}.analytics-consent-actions button,.analytics-footer-button{cursor:pointer;font:600 12px system-ui,sans-serif}
+.analytics-consent-actions button{min-height:42px;border-radius:7px;padding:10px 14px;border:1px solid var(--cyan);background:transparent;color:var(--ink)}
+.analytics-consent-actions button[data-analytics-consent="granted"]{background:var(--cyan);color:#fff}
+.analytics-consent-actions button:focus-visible,.analytics-footer-button:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.analytics-footer-button{border:0;background:none;padding:4px 0;color:inherit;text-decoration:underline}
+.analytics-site-links{width:100%;display:flex;gap:18px;justify-content:flex-end;font-size:12px;margin-top:10px;color:var(--muted)}
+@media(max-width:700px){.analytics-consent{align-items:stretch;flex-direction:column;gap:15px;padding:16px}.analytics-consent-actions button{flex:1}.analytics-site-links{justify-content:flex-start;flex-wrap:wrap}}
+
+/* Mobile header: older styles.css forces 68px height at <=740px, despite wrapped navigation.
+   Give navigation its own rows so it cannot overlap the homepage status tags.
+   Both themes use the exact approved purple-outline artwork; no logo redraws. */
+@media(max-width:740px){
+  header.nav{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    grid-template-areas:"brand theme" "cta cta" "links links";
+    align-items:center;
+    column-gap:12px;
+    row-gap:10px;
+    height:auto;
+    min-height:0;
+    padding:12px 0 14px;
+  }
+  header.nav>.brand{grid-area:brand;min-width:0;max-width:100%;margin:0}
+  header.nav>.brand .brand-logo{width:min(190px,100%)!important;max-height:72px!important;object-fit:contain}
+  header.nav>.theme-toggle{grid-area:theme;justify-self:end;margin:0}
+  header.nav>.nav-cta{grid-area:cta;justify-self:start;margin:0}
+  header.nav>nav{
+    grid-area:links;
+    width:100%;
+    margin:0;
+    padding:6px 0 2px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    gap:10px 18px;
+    overflow:visible;
+  }
+  header.nav>nav a{font-size:12px;line-height:1.5;white-space:nowrap}
+}
+
+
+/* Promotion-ready UX, retaining the approved dark/light logo artwork and forensic palette. */
+.story-line{font-size:15px;line-height:1.6;max-width:790px;color:var(--muted);margin-top:20px}
+.home-proof,.passport-record{border:1px solid var(--line);border-radius:18px;background:var(--navy2);padding:clamp(18px,3.5vw,36px);min-width:0}
+.home-proof{margin-top:0;margin-bottom:52px}
+.home-proof-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.home-proof-head h2{font-size:clamp(25px,4vw,40px);letter-spacing:-.04em;line-height:1.12;margin:6px 0}
+.home-proof-head p:not(.eyebrow){color:var(--muted);line-height:1.6;max-width:640px;font-size:14px}
+.home-proof-controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:18px 0}
+.home-proof-controls label{font:600 12px ui-monospace,monospace}
+.home-proof-controls select{background:var(--navy3);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:12px;min-width:0}
+.home-source-toggles{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}
+.home-source-toggles label{display:flex;align-items:center;gap:8px;font:500 12px ui-sans-serif,system-ui;padding:10px 12px;background:var(--navy3);border:1px solid var(--line);border-radius:9px;cursor:pointer}
+.home-source-toggles input{accent-color:#008190}
+.home-proof-result{min-height:70px;border:1px solid var(--line);border-radius:10px;padding:14px;background:rgba(0,129,144,.045);color:var(--ink);font-size:13px;line-height:1.6;margin-bottom:14px}
+.home-claims{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.home-claim{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding:7px 0;overflow-wrap:anywhere}
+.home-claim span{color:var(--muted)}
+.state-direct,.state-supported{color:#008190}
+.state-inferred{color:#6aa7ab}
+.state-conflicting,.state-missing{color:#f49355}
+.evidence-claim{padding:0;border-top:1px solid var(--line);font-size:13px}
+.evidence-claim:first-child{border-top:0}
+.evidence-claim summary{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px;cursor:pointer;list-style:none;overflow-wrap:anywhere}
+.evidence-claim summary::-webkit-details-marker{display:none}
+.evidence-claim summary::before{content:"+";font-size:18px;color:var(--cyan);margin-right:5px}
+.evidence-claim[open] summary::before{content:"−"}
+.evidence-claim summary span{flex:1}
+.evidence-claim b{font:700 11px ui-monospace,monospace}
+.evidence-claim .provenance{background:rgba(0,129,144,.055);padding:12px 15px 15px;line-height:1.6}
+.evidence-claim .provenance strong{font:600 11px ui-monospace,monospace;color:var(--cyan)}
+.evidence-claim .provenance p{color:var(--muted);margin:9px 0}
+.evidence-claim .provenance small{color:var(--muted)}
+.passport-head{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.passport-head strong{font-size:clamp(20px,3vw,30px);color:#f9c18c;overflow-wrap:anywhere}
+.passport-fields{margin-top:25px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.passport-fields>div{min-width:0;border:1px solid var(--line);border-radius:9px;padding:16px;background:var(--navy3)}
+.passport-fields small{display:block;font-size:11px;color:var(--muted);margin-bottom:7px}
+.passport-fields strong{display:block;font-size:14px;font-weight:600;overflow-wrap:anywhere}
+.assurance-steps{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:20px 0 25px}
+.assurance-steps span{border:1px solid var(--line);padding:12px 14px;border-radius:9px;background:var(--navy2);font-size:13px}
+.assurance-steps i{font-style:normal;color:var(--orange)}
+.network-section{padding-top:80px}
+.level-grid:has(>.level-card:nth-child(4)){grid-template-columns:repeat(4,minmax(0,1fr))}
+.footer-links{grid-template-columns:repeat(2,minmax(0,1fr))}
+.footer-links a:hover,.nav nav a:focus-visible,.btn:focus-visible,a.text-link:focus-visible{color:var(--orange)}
+html[data-theme="light"] .home-proof,html[data-theme="light"] .passport-record{background:#fffdf8}
+html[data-theme="light"] .passport-fields>div,html[data-theme="light"] .home-proof-controls select,html[data-theme="light"] .home-source-toggles label,html[data-theme="light"] .assurance-steps span{background:#f7f1e7;color:#2a1f55}
+html[data-theme="light"] .home-proof-result{background:rgba(0,129,144,.045)}
+html[data-theme="light"] .story-line,html[data-theme="light"] .home-proof-head p:not(.eyebrow),html[data-theme="light"] .home-claim span{color:#5f6673}
+html[data-theme="light"] .state-direct,html[data-theme="light"] .state-supported{color:#008190}
+html[data-theme="light"] .state-inferred{color:#4b6681}
+html[data-theme="light"] .state-conflicting,html[data-theme="light"] .state-missing{color:#a85416}
+html[data-theme="light"] .passport-head strong{color:#2a1f55}
+@media(max-width:1100px){.level-grid:has(>.level-card:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:740px){
+  .nav{gap:9px}
+  .nav nav a{font-size:12px}
+  .home-proof-head{flex-direction:column}
+  .hero-home{padding-bottom:35px}
+  .home-claims{grid-template-columns:minmax(0,1fr)}
+  .home-proof-controls{align-items:stretch}
+  .home-proof-controls label{flex-basis:100%}
+  .home-proof-controls select,.home-proof-controls .btn{flex:1 1 180px}
+  .fragment-grid.partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .reconstruct-summary{flex-wrap:wrap}
+  .reconstruct-result .enterprise-chain{overflow-wrap:anywhere}
+}
+@media(max-width:540px){
+ .level-grid:has(>.level-card:nth-child(4)),.passport-fields,.fragment-grid.partner-grid{grid-template-columns:minmax(0,1fr)}
+ .home-proof,.passport-record{padding:16px}
+ .home-source-toggles{display:grid;grid-template-columns:1fr}
+ .home-proof-controls .btn,.home-proof-controls select{width:100%}
+ .passport-head{align-items:flex-start;flex-direction:column}
+ .reconstruct-result,.evidence-control{min-width:0}
+ .record-headline{flex-wrap:wrap}
+ .hero h1{overflow-wrap:break-word}
+}

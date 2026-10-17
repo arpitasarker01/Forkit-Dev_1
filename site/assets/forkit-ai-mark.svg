@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-labelledby="title desc">
+<title id="title">Forkit AI mark</title><desc id="desc">Hash and brain symbol in Forkit AI brand colors</desc>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M41 13c6 0 10 4 10 9 5 0 9 4 9 9 0 3-1 5-3 7 2 2 3 5 3 8 0 6-5 11-11 11H37V17c1-2 2-3 4-4Z" fill="#6aa7ab" stroke="#2a1f55" stroke-width="3.4"/>
+  <path d="M40 24c4-4 10-2 10 3M41 37c5-3 11 0 11 5M42 50c4 2 7 0 8-3" stroke="#008190" stroke-width="3.2"/>
+  <circle cx="47" cy="27" r="2.1" fill="#f49355" stroke="none"/>
+  <circle cx="50" cy="43" r="2.1" fill="#f9c18c" stroke="none"/>
+  <path d="M15 18 11 56M29 16l-4 40M8 30h29M6 44h30" stroke="#2a1f55" stroke-width="7.2"/>
+  <path d="M15 18 11 56M8 30h29" stroke="#f49355" stroke-width="3.2"/>
+  <path d="M29 16l-4 40M6 44h30" stroke="#f9c18c" stroke-width="3.2"/>
+</g></svg>

@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+echo "Forkit Footprint verified binaries are not published yet." >&2
+echo "Join the private beta: https://forkit-ai.com/footprint/#beta" >&2
+exit 1
